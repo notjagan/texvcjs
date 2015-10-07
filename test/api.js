@@ -4,12 +4,7 @@ var assert = require('assert');
 var texvcjs = require('../');
 
 describe('API', function() {
-    it('should return success (1)', function() {
-        var result = texvcjs.check('\\sin(x)+{}{}\\cos(x)^2 newcommand');
-        assert.equal(result.status, '+');
-        assert.equal(result.output, '\\sin(x)+{}{}\\cos(x)^{2}newcommand');
-    });
-    it('should return success (2)', function() {
+    it('should return success', function() {
         var result = texvcjs.check('y=x+2');
         assert.equal(result.status, '+');
         assert.equal(result.output, 'y=x+2');
@@ -34,8 +29,6 @@ describe('API', function() {
         // testGetValidTex()
         { in: '\\newcommand{\\text{do evil things}}',
           status: 'F', details: '\\newcommand' },
-        { in: '\\sin\\left(\\frac12x\\right)',
-          output: '\\sin\\left(\\frac{1}{2}x\\right)' },
         // testGetValidTexCornerCases()
         { in: '\\reals',
           output: '\\mathbb{R}',
@@ -47,8 +40,6 @@ describe('API', function() {
           status: 'F', details: '\\figureEightIntegral' },
         // My own test cases:
         { in: '\\diamondsuit' },
-        { in: '\\sinh x',
-          output: '\\sinh@@{x}'},
         { in: '\\begin{foo}\\end{foo}',
           status: 'F', details: '\\begin{foo}' },
         { in: '\\hasOwnProperty',

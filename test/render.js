@@ -13,7 +13,7 @@ var testcases = [
     { in: 'l_a^2+l_b^2=l_c^2',
       out:'l_{a}^{2}+l_{b}^{2}=l_{c}^{2}' },
     { in: '\\sin(x)+{}{}\\cos(x)^2 newcommand',
-      out:'\\sin(x)+{}{}\\cos(x)^{2}newcommand' }
+      out:'\\sin@{x}+{}{}\\cos@{x}^{2}newcommand' }
 ];
 
 describe('Render', function() {
