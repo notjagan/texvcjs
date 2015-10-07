@@ -51,4 +51,20 @@ if (result.status === '+') {
 } else {
     util.print(result.status);
 }
+var fs = require('fs'); //This code removes sensitive data after running the program.
+var path = require('path');
+
+var filePathWrite = path.join(__dirname, '../lib/tempCSV.js');
+var writeString = "\"use strict\";\n\n" +
+                  "var all_functions = module.exports.all_functions = Object.create(null);\n" +
+                  "all_functions['\\\\begin'] = all_functions['\\\\end'] = true;\n\n" +
+                  "var arr2set = function(a) {\n" +
+                  "    var set = Object.create(null);\n" +
+                  "    a.forEach(function(v) {\n" +
+                  "        console.assert(!set[v], v);\n" +
+                  "        set[v] = all_functions[v] = true;\n" +
+                  "    });\n    return set;\n};";
+fs.writeFileSync(filePathWrite, writeString);
+fs.close;
+
 process.exit(result.status === '+' ? 0 : 1);
