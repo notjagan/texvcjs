@@ -12,7 +12,9 @@ program
     .usage('[options] <tex input>')
     .option('--rebuild', 'Rebuild PEGjs grammar before parsing')
     .option('-v, --verbose', 'Show verbose error information')
-    .option('-D, --debug', 'Show stack trace on failure');
+    .option('-D, --debug', 'Show stack trace on failure')
+    .option('--semanticLaTeX', 'Include semantic LaTeX')
+    .parse(process.argv);
 
 PACKAGES.forEach(function(pkg) {
     var msg = 'Fail validation if input requires the ';
@@ -33,7 +35,7 @@ if (program.rebuild) {
 }
 
 var texvcjs = require('../');
-var result = texvcjs.check(input, { debug: program.debug });
+var result = texvcjs.check(input, { debug: program.debug, semanticLaTeX:program.semanticLaTeX });
 
 // check required packages
 PACKAGES.forEach(function(pkg) {

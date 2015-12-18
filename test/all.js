@@ -421,7 +421,7 @@ describe('Comprehensive test cases', function() {
             tc.output = tc.output || tc.input;
             if (!tc.skipJs) {
                 it('output should be correct', function() {
-                    var result = texvcjs.check(tc.input, { debug: true });
+                    var result = texvcjs.check(tc.input, { debug: true, semanticLaTeX: true });
                     assert.equal(result.status, '+');
                     assert.equal(result.output, tc.output);
                 });
@@ -430,8 +430,8 @@ describe('Comprehensive test cases', function() {
                 // verify that the output doesn't change if we feed it
                 // through again.
                 it('should parse its own output', function() {
-                    var result1 = texvcjs.check(tc.output, { debug: true });
-	                var result2 = texvcjs.check(result1.output, { debug: true });
+                    var result1 = texvcjs.check(tc.output, { debug: true, semanticLaTeX: true });
+	                var result2 = texvcjs.check(result1.output, { debug: true, semanticLaTeX: true });
                     assert.equal(result2.status, '+');
                     assert.equal(result2.output, result1.output);
                 });
