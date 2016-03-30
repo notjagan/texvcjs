@@ -358,6 +358,22 @@ describe('Comprehensive test cases', function() {
             input: '{abc \\rm def \\it ghi \\cal jkl \\bf mno}',
             output: '{abc\\rm{def\\it{ghi\\cal{jkl\\bf{mno}}}}}'
         },
+        'JACOBI': {
+            input: 'P_a^{(b, c)}(d)',
+            output: '\\Jacobi{a}{b}{c}@{d}'
+        },
+        'LAGUERRE1': {
+            input: 'L_a(b)',
+            output: '\\Laguerre{a}@{b}'
+        },
+        'LAGUERRE2': {
+            input: 'L_a^{(b)}(c)',
+            output: '\\Laguerre{a}[b]@{c}'
+        },
+        'EJACOBI': {
+            input: '{\\rm sn}(b, c)',
+            output: '\\Jacobisn@{b}{c}'
+        },
         'litsq_zq': {
             input: ']^2',
             output: ']^{2}'
