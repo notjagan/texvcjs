@@ -50,10 +50,10 @@ describe('Comprehensive test cases', function() {
         },
         'LaTeX functions': {
             input:
-                '\\arccos\\arcsin\\arctan\\arg' +
-                '\\deg\\det\\dim\\gcd\\hom\\inf\\ker\\lg' +
-                '\\lim\\liminf\\limsup\\max\\min\\Pr' +
-                '\\sup'
+            '\\arccos\\arcsin\\arctan\\arg\\cosh\\cos\\cot\\coth' +
+            '\\csc\\deg\\det\\dim\\exp\\gcd\\hom\\inf\\ker\\lg' +
+            '\\lim\\liminf\\limsup\\ln\\log\\max\\min\\Pr\\sec' +
+            '\\sin\\sup\\tan\\tanh\\sinh'
         },
         'Mediawiki functions': {
             input:
@@ -261,15 +261,15 @@ describe('Comprehensive test cases', function() {
         },
         'PAREN1': {
             input:
-                '\\sinh(x)',
+                '\\sinh(A)',
             output:
-                '\\sinh@{x}'
+                '\\sinh@{A}'
         },
         'PAREN2': {
             input:
-                '\\sinh{x}',
+                '\\sinh{A}',
             output:
-                '\\sinh@@{x}'
+                '\\sinh@@{A}'
         },
         'FUN_AR1': {
             input:
