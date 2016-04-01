@@ -259,6 +259,12 @@ describe('Comprehensive test cases', function() {
             output:
                 '\\pochhammer{abcd}{A}'
         },
+        'PAREN': {
+            input:
+                '\\sinh(x)',
+            output:
+                '\\sinh@{x}'
+        },
         'FUN_AR1': {
             input:
                 '\\acute{A}\\bar{A}\\bcancel{A}\\bmod{A}\\boldsymbol{A}' +
