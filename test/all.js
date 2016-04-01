@@ -259,11 +259,17 @@ describe('Comprehensive test cases', function() {
             output:
                 '\\pochhammer{abcd}{A}'
         },
-        'PAREN': {
+        'PAREN1': {
             input:
                 '\\sinh(x)',
             output:
                 '\\sinh@{x}'
+        },
+        'PAREN2': {
+            input:
+                '\\sinh{x}',
+            output:
+                '\\sinh@@{x}'
         },
         'FUN_AR1': {
             input:
