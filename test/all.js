@@ -284,6 +284,12 @@ describe('Comprehensive test cases', function() {
             '\\left\\langle\\right\\rangle' +
             '\\right\\uparrow\\right\\Uparrow\\right\\Uparrow'
         },
+        'POCH': {
+            input:
+                '(abcd)_A',
+            output:
+                '\\pochhammer{abcd}{A}'
+        },
         'PAREN1': {
             input:
                 '\\sinh(A)',

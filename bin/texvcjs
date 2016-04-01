@@ -53,4 +53,5 @@ if (result.status === '+') {
 } else {
     util.print(result.status);
 }
+
 process.exit(result.status === '+' ? 0 : 1);
