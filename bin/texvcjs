@@ -13,6 +13,8 @@ program
     .option('--rebuild', 'Rebuild PEGjs grammar before parsing')
     .option('-v, --verbose', 'Show verbose error information')
     .option('-D, --debug', 'Show stack trace on failure')
+    .option('--usemathrm', 'Use \\mathrm instead of \\mbox to escape some text literals')
+    .option('--usemhchem', 'Allow commands from the mhchem package')
     .option('--semanticLaTeX', 'Include semantic LaTeX')
     .parse(process.argv);
 
@@ -35,7 +37,7 @@ if (program.rebuild) {
 }
 
 var texvcjs = require('../');
-var result = texvcjs.check(input, { debug: program.debug, semanticLaTeX:program.semanticLaTeX });
+var result = texvcjs.check(input, { debug: program.debug, usemathrm:program.usemathrm, usemhchem: program.usemhchem, semanticLaTeX:program.semanticLaTeX });
 
 // check required packages
 PACKAGES.forEach(function(pkg) {

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "input": "\\sinh(x)",
+    "texvcjs": "\\sinh@{x}"
+  },
+  {
+    "id": 2,
+    "input": "P_a^{(b, c)}(d)",
+    "texvcjs": "\\Jacobi{a}{b}{c}@{d}"
+  },
+  {
+    "id": 3,
+    "input": "L_a(b)",
+    "texvcjs": "\\Laguerre{a}@{b}"
+  },
+  {
+    "id": 4,
+    "input": "L_a^{(b)}(c)",
+    "texvcjs": "\\Laguerre{a}[b]@{c}"
+  },
+  {
+    "id": 5,
+    "input": "{\\rm sn}(b, c)",
+    "texvcjs": "\\Jacobisn@{b}{c}"
+  },
+  {
+    "id": 6,
+    "input": "(a)_n",
+    "texvcjs": "\\pochhammer{a}{n}"
+  },
+  {
+    "id": 7,
+    "input": "\\sinh(x)",
+    "texvcjs": "\\sinh@{x}"
+  },
+  {
+    "id": 8,
+    "input": "\\sinh(x)",
+    "texvcjs": "\\sinh@{x}"
+  }
+]
