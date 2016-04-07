@@ -31,12 +31,7 @@
   },
   {
     "id": 7,
-    "input": "\\sinh(x)",
-    "texvcjs": "\\sinh@{x}"
-  },
-  {
-    "id": 8,
-    "input": "\\sinh(x)",
-    "texvcjs": "\\sinh@{x}"
+    "input": "\\sinh x",
+    "texvcjs": "\\sinh@@{x}"
   }
 ]

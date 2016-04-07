@@ -35,7 +35,7 @@ describe('API', function() {
         { in: '\\newcommand{\\text{do evil things}}',
           status: 'F', details: '\\newcommand' },
         { in: '\\sin\\left(\\frac12x\\right)',
-          output: '\\sin@@{\\left(\\frac{1}{2}x\\right)}' },
+          output: '\\sin\\left(\\frac{1}{2}x\\right)' },
         // testGetValidTexCornerCases()
         { in: '\\reals',
           output: '\\mathbb{R}',
@@ -47,8 +47,6 @@ describe('API', function() {
           status: 'F', details: '\\figureEightIntegral' },
         // My own test cases:
         { in: '\\diamondsuit' },
-        { in: '\\sinh x',
-          output: '\\sinh@@{x}'},
         { in: '\\begin{foo}\\end{foo}',
           status: 'F', details: '\\begin{foo}' },
         { in: '\\hasOwnProperty',
@@ -99,7 +97,7 @@ describe('API', function() {
     ];
     testcases.forEach(function(t) {
         it('should check '+JSON.stringify(t.in), function() {
-            var result = texvcjs.check(t.in, {semanticLaTeX: true});
+            var result = texvcjs.check(t.in);
             assert.equal(result.status, t.status || '+');
             if (result.status === '+') {
                 assert.equal(result.output, t.output || t.in);
