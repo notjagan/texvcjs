@@ -12,9 +12,11 @@ program
     .usage('[options] <tex input>')
     .option('--rebuild', 'Rebuild PEGjs grammar before parsing')
     .option('-v, --verbose', 'Show verbose error information')
+    .option('-D, --debug', 'Show stack trace on failure')
     .option('--usemathrm', 'Use \\mathrm instead of \\mbox to escape some text literals')
     .option('--usemhchem', 'Allow commands from the mhchem package')
-    .option('-D, --debug', 'Show stack trace on failure');
+    .option('--semanticlatex', 'Include semantic LaTeX')
+    .parse(process.argv);
 
 PACKAGES.forEach(function(pkg) {
     var msg = 'Fail validation if input requires the ';
@@ -35,7 +37,7 @@ if (program.rebuild) {
 }
 
 var texvcjs = require('../');
-var result = texvcjs.check(input, { debug: program.debug, usemathrm:program.usemathrm, usemhchem: program.usemhchem });
+var result = texvcjs.check(input, { debug: program.debug, usemathrm:program.usemathrm, usemhchem: program.usemhchem, semanticLaTeX:program.semanticLaTeX });
 
 // check required packages
 PACKAGES.forEach(function(pkg) {
