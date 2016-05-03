@@ -35,7 +35,7 @@ describe('Run test for parsing output for semantic LaTeX commands:', function() 
         if(testcase.ignore !== true ) {
             it(testcase.id+"$"+testcase.input+"$", function () {
                 var result1 = texvcjs.check(testcase.input,{semanticLaTeX:true});
-                var result2 = texvcjs.check(testcase.input,{semanticLaTeX:true});
+                var result2 = texvcjs.check(result1.output,{semanticLaTeX:true});
                 assert.equal(result2.output, testcase.texvcjs,
                     JSON.stringify({
                         id: testcase.id,

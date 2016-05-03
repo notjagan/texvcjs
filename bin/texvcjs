@@ -15,7 +15,7 @@ program
     .option('-D, --debug', 'Show stack trace on failure')
     .option('--usemathrm', 'Use \\mathrm instead of \\mbox to escape some text literals')
     .option('--usemhchem', 'Allow commands from the mhchem package')
-    .option('--semanticLaTeX', 'Include semantic LaTeX')
+    .option('--semanticlatex', 'Include semantic LaTeX')
     .parse(process.argv);
 
 PACKAGES.forEach(function(pkg) {
