@@ -33,5 +33,10 @@
     "id": 7,
     "input": "\\sinh x",
     "texvcjs": "\\sinh@@{x}"
+  },
+  {
+    "id": 8,
+    "input": "(a;b)_c",
+    "texvcjs": "\\qPochhammer{a}{b}{c}"
   }
 ]

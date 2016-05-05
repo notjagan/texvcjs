@@ -37,7 +37,7 @@ if (program.rebuild) {
 }
 
 var texvcjs = require('../');
-var result = texvcjs.check(input, { debug: program.debug, usemathrm:program.usemathrm, usemhchem: program.usemhchem, semanticLaTeX:program.semanticLaTeX });
+var result = texvcjs.check(input, { debug: program.debug, usemathrm:program.usemathrm, usemhchem: program.usemhchem, semanticlatex:program.semanticlatex });
 
 // check required packages
 PACKAGES.forEach(function(pkg) {
