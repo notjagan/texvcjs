@@ -33,7 +33,7 @@ program.parse(process.argv);
 var input = program.args.join(' ');
 
 if (program.rebuild) {
-    require('../lib/build-parser');
+    require('../lib/build-parser-copy');
 }
 
 var texvcjs = require('../');
