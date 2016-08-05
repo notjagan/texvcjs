@@ -1,1021 +1,0 @@
-
-> texvcjs@0.3.1-git test /home/jrp4/Documents/i_just_want_to_avoid_directory_conflicts/texvcjs
-> node -e 'require("./lib/build-parser")' && jshint . && mocha
-
-
-
-  Comprehensive test cases
-    Box functions
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    Box functions (2)
-      ✓ output should be correct
-      ✓ should parse its own output
-    LaTeX functions
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    Mediawiki functions
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    Literals (1)
-      ✓ output should be correct
-      ✓ should parse its own output (52ms)
-      ✓ should match ocaml output
-    Literals (2)
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    Literals (2')
-      ✓ output should be correct
-      ✓ should parse its own output
-    Literals (2) MJ
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    Literals (2') MJ
-      ✓ output should be correct
-      ✓ should parse its own output
-    Literals (3)
-      1) output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    Big
-      ✓ output should be correct (47ms)
-      ✓ should parse its own output (69ms)
-      ✓ should match ocaml output
-    Delimiters (1)
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    Delimiters (2)
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    Delimiters (3)
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    Delimiters (4)
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    Delimiters (5)
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    FUN_AR1
-      ✓ output should be correct
-      ✓ should parse its own output
-    FUN_AR1 (2)
-      ✓ output should be correct
-      ✓ should match ocaml output (except for spacing)
-    FUN_AR1NB (1)
-      ✓ output should be correct
-      ✓ should parse its own output
-    FUN_AR1NB (2)
-      ✓ output should be correct
-      ✓ should parse its own output
-    FUN_AR1NB (3)
-      ✓ output should be correct
-      ✓ should parse its own output
-    FUN_AR1OPT
-      ✓ output should be correct
-      ✓ should parse its own output
-    FUN_AR2
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output (except for spacing)
-    FUN_AR2nb
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    FUN_AR3
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    FUN_INFIX (1)
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    FUN_INFIX (2)
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    FUN_INFIX (3)
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    FUN_INFIX (4)
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    DECLh
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    litsq_zq
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    Matrices (1)
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    Matrices (2)
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    Matrices (3)
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    Color (1)
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    Color (2)
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    Color (3)
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    Color (4)
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    Color (5)
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-    Unicode
-      ✓ output should be correct
-      ✓ should parse its own output
-      ✓ should match ocaml output
-
-  API
-    ✓ should return success (1)
-    ✓ should return success (2)
-    ✓ should report undefined functions (1)
-    ✓ should report undefined functions (2)
-    ✓ should report undefined parser errors
-    ✓ should check "\\newcommand{\\text{do evil things}}"
-    ✓ should check "\\sin\\left(\\frac12x\\right)"
-    ✓ should check "\\reals"
-    ✓ should check "\\lbrack"
-    ✓ should check "\\figureEightIntegral"
-    ✓ should check "\\diamondsuit "
-    ✓ should check "\\begin{foo}\\end{foo}"
-    ✓ should check "\\hasOwnProperty"
-    ✓ should check "\\hline"
-    ✓ should check "\\begin{array}{c}\\hline a \\\\ \\hline\\hline b \\end{array}"
-    ✓ should check "\\Diamond "
-    ✓ should check "{\\begin{matrix}a\\ b\\end{matrix}}"
-    ✓ should check "{\\cancel{x}}"
-    ✓ should check "\\color{red}"
-    ✓ should check "\\euro"
-    ✓ should check "\\coppa"
-    ✓ should check "\\mathbb {R}"
-    ✓ should check "\\reals"
-    ✓ should check "{\\color[rgb]{1,0,0}{\\mbox{This text is red.}}}"
-    ✓ should check "{\\color[rgb]{1.5,0,0}{\\mbox{This text is bright red.}}}"
-    ✓ should check "{\\color [RGB]{51,0,0}{\\mbox{This text is dim red.}}}"
-    ✓ should check "{\\color[RGB]{256,0,0}{\\mbox{This text is bright red.}}}"
-    ✓ should check "\\ce{ H2O }"
-    ✓ should check "\\ce{[Zn(OH)4]^2-}"
-
-  AST
-    ✓ should construct and stringify
-
-  ast.Tex.contains_func
-    ✓ should not find \foo in \left(abc\right)
-    ✓ should not find \begin{foo} in \left(abc\right)
-    ✓ should find \left in \left(abc\right)
-    ✓ should find \right in \left(abc\right)
-    ✓ should not find \foo in \sin(x)+\cos(x)^2
-    ✓ should not find \begin{foo} in \sin(x)+\cos(x)^2
-    ✓ should find \sin in \sin(x)+\cos(x)^2
-    ✓ should find \cos in \sin(x)+\cos(x)^2
-    ✓ should not find \foo in \big\langle
-    ✓ should not find \begin{foo} in \big\langle
-    ✓ should find \big in \big\langle
-    ✓ should find \langle in \big\langle
-    ✓ should not find \arccot in \arccot(x) \atop \aleph
-    ✓ should not find \foo in \arccot(x) \atop \aleph
-    ✓ should not find \begin{foo} in \arccot(x) \atop \aleph
-    ✓ should find \operatorname in \arccot(x) \atop \aleph
-    ✓ should find \atop in \arccot(x) \atop \aleph
-    ✓ should find \aleph in \arccot(x) \atop \aleph
-    ✓ should not find \alef in \acute{\euro\alef}
-    ✓ should not find \foo in \acute{\euro\alef}
-    ✓ should not find \begin{foo} in \acute{\euro\alef}
-    ✓ should find \acute in \acute{\euro\alef}
-    ✓ should find \euro in \acute{\euro\alef}
-    ✓ should find \aleph in \acute{\euro\alef}
-    ✓ should find \mbox in \acute{\euro\alef}
-    ✓ should not find \darr in \sqrt[\backslash]{\darr}
-    ✓ should not find \foo in \sqrt[\backslash]{\darr}
-    ✓ should not find \begin{foo} in \sqrt[\backslash]{\darr}
-    ✓ should find \sqrt in \sqrt[\backslash]{\darr}
-    ✓ should find \backslash in \sqrt[\backslash]{\darr}
-    ✓ should find \downarrow in \sqrt[\backslash]{\darr}
-    ✓ should not find \foo in \mbox{abc}
-    ✓ should not find \begin{foo} in \mbox{abc}
-    ✓ should find \mbox in \mbox{abc}
-    ✓ should not find \foo in x_\aleph^\sqrt{2}
-    ✓ should not find \begin{foo} in x_\aleph^\sqrt{2}
-    ✓ should find \aleph in x_\aleph^\sqrt{2}
-    ✓ should find \sqrt in x_\aleph^\sqrt{2}
-    ✓ should not find \foo in {abc \rm def \it ghi}
-    ✓ should not find \begin{foo} in {abc \rm def \it ghi}
-    ✓ should find \rm in {abc \rm def \it ghi}
-    ✓ should find \it in {abc \rm def \it ghi}
-    ✓ should not find \bold in {\frac{\sideset{_\dagger}{^\bold{x}}\prod}{\hat{a}}}
-    ✓ should not find \foo in {\frac{\sideset{_\dagger}{^\bold{x}}\prod}{\hat{a}}}
-    ✓ should not find \begin{foo} in {\frac{\sideset{_\dagger}{^\bold{x}}\prod}{\hat{a}}}
-    ✓ should find \frac in {\frac{\sideset{_\dagger}{^\bold{x}}\prod}{\hat{a}}}
-    ✓ should find \sideset in {\frac{\sideset{_\dagger}{^\bold{x}}\prod}{\hat{a}}}
-    ✓ should find \dagger in {\frac{\sideset{_\dagger}{^\bold{x}}\prod}{\hat{a}}}
-    ✓ should find \mathbf in {\frac{\sideset{_\dagger}{^\bold{x}}\prod}{\hat{a}}}
-    ✓ should find \prod in {\frac{\sideset{_\dagger}{^\bold{x}}\prod}{\hat{a}}}
-    ✓ should find \hat in {\frac{\sideset{_\dagger}{^\bold{x}}\prod}{\hat{a}}}
-    ✓ should not find \begin in \begin{array}{l|r} \alpha & \beta \\ \gamma & \delta \end{array}
-    ✓ should not find \end in \begin{array}{l|r} \alpha & \beta \\ \gamma & \delta \end{array}
-    ✓ should not find \hline in \begin{array}{l|r} \alpha & \beta \\ \gamma & \delta \end{array}
-    ✓ should not find \foo in \begin{array}{l|r} \alpha & \beta \\ \gamma & \delta \end{array}
-    ✓ should not find \begin{foo} in \begin{array}{l|r} \alpha & \beta \\ \gamma & \delta \end{array}
-    ✓ should find \begin{array} in \begin{array}{l|r} \alpha & \beta \\ \gamma & \delta \end{array}
-    ✓ should find \end{array} in \begin{array}{l|r} \alpha & \beta \\ \gamma & \delta \end{array}
-    ✓ should find \alpha in \begin{array}{l|r} \alpha & \beta \\ \gamma & \delta \end{array}
-    ✓ should find \beta in \begin{array}{l|r} \alpha & \beta \\ \gamma & \delta \end{array}
-    ✓ should find \gamma in \begin{array}{l|r} \alpha & \beta \\ \gamma & \delta \end{array}
-    ✓ should find \delta in \begin{array}{l|r} \alpha & \beta \\ \gamma & \delta \end{array}
-    ✓ should not find \foo in \begin{array}{l|r}\hline a & b\end{array}
-    ✓ should not find \begin{foo} in \begin{array}{l|r}\hline a & b\end{array}
-    ✓ should find \begin{array} in \begin{array}{l|r}\hline a & b\end{array}
-    ✓ should find \end{array} in \begin{array}{l|r}\hline a & b\end{array}
-    ✓ should find \hline in \begin{array}{l|r}\hline a & b\end{array}
-    ✓ should not find \c in \color[rgb]{0,1,.2}
-    ✓ should not find rgb in \color[rgb]{0,1,.2}
-    ✓ should not find \pagecolor in \color[rgb]{0,1,.2}
-    ✓ should not find \definecolor in \color[rgb]{0,1,.2}
-    ✓ should not find \foo in \color[rgb]{0,1,.2}
-    ✓ should not find \begin{foo} in \color[rgb]{0,1,.2}
-    ✓ should find \color in \color[rgb]{0,1,.2}
-    ✓ should not find \color in \definecolor{blue}{cmyk}{1,0,0,0}\pagecolor{blue}
-    ✓ should not find cmyk in \definecolor{blue}{cmyk}{1,0,0,0}\pagecolor{blue}
-    ✓ should not find blue in \definecolor{blue}{cmyk}{1,0,0,0}\pagecolor{blue}
-    ✓ should not find \blue in \definecolor{blue}{cmyk}{1,0,0,0}\pagecolor{blue}
-    ✓ should not find \foo in \definecolor{blue}{cmyk}{1,0,0,0}\pagecolor{blue}
-    ✓ should not find \begin{foo} in \definecolor{blue}{cmyk}{1,0,0,0}\pagecolor{blue}
-    ✓ should find \definecolor in \definecolor{blue}{cmyk}{1,0,0,0}\pagecolor{blue}
-    ✓ should find \pagecolor in \definecolor{blue}{cmyk}{1,0,0,0}\pagecolor{blue}
-    ✓ should not find R in \mathbb{R}
-    ✓ should not find \foo in \mathbb{R}
-    ✓ should not find \begin{foo} in \mathbb{R}
-    ✓ should find \mathbb in \mathbb{R}
-
-  All formulae from en-wiki:
-    - P=3B_0\left(\frac{1-\eta}{\eta^2}\right)e^{\frac{3}{2}(B_0'-1)(1-\eta)} ... Opex_t
-    - S_\ell=e^{2i\delta_\ell} ... \scriptstyle W[k] = (-1)^k\cdot W_0[k].
-    - 
-\psi(x)=\sum_{n\le x}\Lambda(n). \;
- ... \quad k(\phi)\;=\;\frac{P'M'}{PM}\;=\;\frac{\delta x}{R\cos\phi\,\delta\lambda},
-    -  B = {  I_0  \over 2  }  e^{ -j \phi }   ... \cos\left(\tfrac{\pi}{2}\,(2k+1)\right)=0
-    - \ \mathcal{L}_\mathrm{gf} = - \frac{1}{2} \operatorname{Tr}(F^{\mu \nu} F_{\mu \nu})  ... \begin{align}
-   x1 &= 1x = x \quad\text{(two-sided identity)} \\
-  x^0 &= 1
-\end{align}
-    - \scriptstyle Z=A ... \psi(\alpha+1)=\psi(\alpha)=\delta
-    - p_w(\theta)=\frac{1}{2\pi}\,\sum_{n=-\infty}^{\infty} \phi(-n)\,e^{in\theta} = \frac{1}{2\pi}\,\sum_{n=-\infty}^{\infty} \phi(-n)\,z^n  ... q_\mathrm{net} = \sum_{i=1}^N q_i \,\!
-    - y_3=Ay_2=AA^{2}y_0=A^{3}y_0, ... d  J/d x = d A \rho v/dx =  k r \rho v
-    - 0.0\dot{7} ...  E_\text{cm}
-    - \ M_{heel} =   pressure \times S \times A {cos(\phi)}^n  ... x^3-x^2+(3x+1)y^2=0\,
-    - a(b + c + d) = ab + ac + ad ... 
-\left\{\begin{matrix} \ln\ \gamma_1=x^2_2\left[\tau_{21}\left(\frac{G_{21}}{x_1+x_2 G_{21}}\right)^2 +\frac{\tau_{12} G_{12}} {(x_2+x_1 G_{12})^2 }\right] \\
-\\ \ln\ \gamma_2=x^2_1\left[\tau_{12}\left(\frac{G_{12}}{x_2+x_1 G_{12}}\right)^2 +\frac{\tau_{21} G_{21}} {(x_1+x_2 G_{21})^2 }\right]
-\end{matrix}\right.
-    - a_{5}+b_{5}+c_{5}=2a_{1} ... \int_0^1 \left[xy + \frac{y^2}{2}\right]^1_{x^2} \, dx = \int_0^1 \left(x + \frac{1}{2} - x^3 - \frac{x^4}{2} \right) dx = \cdots = \frac{13}{20}.
-    - \frac{6}{r} + \frac{(1-p)^2}{pr} ... f*g=fg+\mathcal{O}(\hbar),
-    - \sigma_{zz} - \sigma_{yz} + \sigma_{xz} ... f\left( \frac{x+y}2 \right) \ge \frac{f(x) + f(y)}2
-    -  N_W = {\text{Transient Inertial Force}\over \text{Shear Force}}\,\! ...  return: fail
-    -  \frac x{\cos\gamma} + \frac y{\sin\gamma} = 1,  ... m_{solvent}
-    -  \frac {x}{\ln x + 2} < \pi(x) < \frac {x}{\ln x - 4} ... 
-\sigma _1 ^2 = \sigma _3 ^2 = I, \; \sigma _1 \sigma _3 = - \sigma _3 \sigma _1 = e^{\pi i} \sigma _3 \sigma_1.
-
-    - \scriptstyle x \;\in\; [0,\, \infty)\! ... _{p}
-    - \lim_{x\to\infty}N^{-x}=\lim_{x\to\infty}1/N^{x}=0 \text{ for any } N > 1 ... \displaystyle{f_z(x) = e^{izx^2/2}}
-    - \scriptstyle G=\langle H, t | t^{-1}Kt=L\rangle ... \frac{}{}-I \, \delta
-    - \Re(z)>2 ... r_i = \frac{\varphi^2 a}{2 \sqrt{3}} = \frac{\sqrt{3}}{12} \left(3+ \sqrt{5} \right) a \approx 0.7557613141\cdot a
-    - 
-\mathcal F_\infty^*  = \sigma\left\{ X_s^{-1}(B) : s\in[0,\infty), B \in \mathcal E^*\right\}.
- ...  SubCipher_{n+1}=DEC_{b_{n+1}}(k_{b_{n+1}},C) 
-    - c_{\text{fil}} ... \frac{(\log g)^2}{\pi g},
-    - g' \in G ... (n,k)
-    - \tbinom mr. ... \delta E/\delta x
-    - \Lambda(x,y,0) ... 
-I:\{\mathbb{X}\subseteq\mathbb{R}^n\}\rightarrow\{\mathbb{Y}\subseteq\mathbb{R}^m\}
-
-    - e\colon G\times G\rightarrow G_T ...  (L_1 \times L_2) \cdot L_3 = \langle L_1,L_2,L_3 \rangle = 0. 
-    - \dot S ...  ~\epsilon_{t-1} > 0 
-    -  X \backslash E ... D_1(P \| Q) = \sum_{i=1}^n p_i \log \frac{p_i}{q_i}
-    - \frac{\text{d} f(x_1^*(c_1, c_2, \dots), x_2^*(c_1, c_2, \dots), ...)}{\text{d} c_k} = \lambda_k^*. ...  \mathbf{r} 
-    - \Delta_{\alpha} ... \mathbf{x} = \begin{bmatrix} x_1 \; x_2 \; \dots \; x_m \end{bmatrix}^{\rm T}
-    - c = \pm 1 ...  (\partial V)_T=-(\partial T)_V=-\left(\frac{\partial V}{\partial P}\right)_T
-    -  - \hbar^2 c^2 \mathbf{\nabla}^2 \psi + m^2 c^4 \psi = - \hbar^2 \frac{\partial^2}{(\partial t)^2} \psi.  ... M_v-N_u=L\Gamma^1{}_{22} + M(\Gamma^2{}_{22}-\Gamma^1{}_{12}) - N\Gamma^2{}_{12}
-    - \beta = -\eta_2, ...  S(\theta_0 , \theta_i) = \frac{(\theta_0 - \theta_i) L_f}{t^{1/2}} 
-    - \{f_i\}_{0}^{N-1} ... \alpha\,=\,\sum_{j=1}^{n}\,\frac{\sigma - \sigma_e}{\sigma_e + L_j(\sigma - \sigma_e)}\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,(3)
-    - \gamma_{xy}=\frac{\partial u_x}{\partial y}+\frac{\partial u_y}{\partial x}\,\! ...  \tfrac5{36} - \tfrac1{24} \sqrt{15} 
-    - \varepsilon(w,z) = \overline{\mathbf{w}}^T \mathbf{Az}. ... (2 f(x))^{-2}
-    - \mathrm{R{-}COOH\ +\ H_2O_2\longrightarrow\ R{-}COOOH\ +\ H_2O} ... (t_1,t_0,p) \in D(X)
-    - A\mathbf{x} ...  x_k,y_l 
-    - A = \frac{M_{ssd}-M_{dry}}{M_{dry}} ... H_{\frac{1}{4},2}=16-8G-\tfrac{5}{6}\pi^2
-    -  \rho= \frac{s}{1+c} ,  ... \begin{align}
-\operatorname{Cov}(z',z'A') &= E\left[\left(z' - E(z') \right)\left(z'A' - E\left(z'A'\right) \right)' \right] \\
-&= E\left[ (z' - \mu') (z'A' - \mu' A' )' \right]\\
-&= E\left[ (z - \mu)' (Az - A\mu) \right].
-\end{align}
-    - 0\le p_i \le 1 ... I^\pm(x)
-    - g=\prod_{i=1}^k p_i^{n_i}. ... \ x^2 - 92y^2=1 
-    - LP ... \scriptstyle r(\boldsymbol{r}_i,\, \boldsymbol{r}_{\text{rec}}) / c \,+\, (t_i \,-\, t_{\text{rec}}) \,+\, \delta t_{\text{atmos},i} \,-\, \delta t_{\text{meas-err},i} \;=\; 0 
-    - R_1 = \frac{1}{2!}f^{\prime\prime}(\xi_n)(\alpha - x_n)^{2} \,, ... u-u_h
-    - (a,b)=\begin{cases}1,&\mbox{ if }z^2=ax^2+by^2\mbox{ has a non-zero solution }(x,y,z)\in F^3;\\-1,&\mbox{ if  not.}\end{cases} ...  \Delta G_{ad} =  \Delta G_{p} +  \Delta G_{c} 
-    - \frac {C_{13}^2 C_4^2 C_4^2 \cdot C_{11}^1 C_{4}^1} {C_{52}^5} = \frac {78 \cdot 6 \cdot 6 \cdot 11 \cdot 4} {2{,}598{,}960} = \frac {123{,}552} {2{,}598{,}960} \approx 4.75\%  ...  
-u_{n,i+1/2} = \frac{u_{n,i}+u_{n,i+1}}{2}, \quad u_{n+1/2,i} = \frac{u_{n,i}+u_{n+1,i}}{2}, 
-u_{n+1/2,i+1/2} = \frac{u_{n,i}+u_{n,i+1}+u_{n+1,i}+u_{n+1,i+1}}{4}. 
- 
-    - -Q_{Coble} ...  \Gamma^\mu {}_{\alpha \beta}\ 
-    - \chi = B \rightarrow A ... \alpha=\frac{d\log(\lambda F_\lambda)}{d\log(\lambda)}
-    - 
-\Omega_{n,\mu\nu}(\mathbf R)=i\sum_{n'\neq n}{\langle n|(\partial H/\partial R_\mu) |n'\rangle\langle n'|(\partial H/\partial R_\nu) | n\rangle-(\nu\leftrightarrow\mu)\over(\varepsilon_n-\varepsilon_{n'})^2}.
- ... \phi_2
-    - s_{i+1}:=s_{i-1}-qs_{i}; ...  R= 1 + \frac{\Delta W}{2 U^2} - \frac{C_{y2}}{U}
-    - 
-\lim_{\tau \rightarrow \infty} \left| \left\langle \frac{dG^{\mathrm{bound}}}{dt} \right\rangle_\tau \right| = 
-\lim_{\tau \rightarrow \infty} \left| \frac{G(\tau) - G(0)}{\tau} \right| \le 
-\lim_{\tau \rightarrow \infty} \frac{G_\max - G_\min}{\tau} = 0.
- ... c=\frac{\sigma_{\varepsilon}}{V}=\frac{\varepsilon}{d}
-    - b_1,b_2\in \mathcal{B} ... \mathrm{spark}(A) = \min_{d \ne 0} \|d\|_0 \text{ s.t. } A d = 0. 
-    - X\times V ... P(y) \ge 0
-    - \vec{S}_t=\vec{S}\wedge \vec{S}_{xx}. \qquad  ... X_1, X_2, X_3\ldots
-    -  \rho \frac{\partial u}{\partial t} =  -\frac{\partial p}{\partial x} + \mu \left(\frac{\partial^2 u}{\partial r^2} + \frac{1}{r} \frac{\partial u}{\partial r}\right) \,  ...  A(k) = \frac{1}{\sqrt{2}} e^{-\frac{(k-k_0)^2}{4}},
-    - (-\infty, 0) ... E=\frac{1}{8}\rho g H^2=\frac{1}{2}\rho g a^2.
-    - f : \mathbb R^2 \to \mathbb R^2 ...  M = E - \epsilon \cdot \sin E 
-    - SP(n)/P ... {\tilde K}_1(\mathbf{Z}[G])
-    - E(\bar{x})= c. \,  ... \forall a,b,c \in X: (aRb \wedge bRc) \Rightarrow aRc
-    - U \subset \mathbb{R}^2 \times \mathbb{R}_{+} ... \nu = \frac{\tau-1}{\sigma d}\,\!
-    - B_i\subset\{1,2,\dots,n\} ... g_n > \frac{c\log n\log\log n\log\log\log\log n}{(\log\log\log n)^2}
-    - \Delta y=f(x+\Delta x)-f(x) ... g_8=-x+119x^2-490x^3+105x^4;
-    - =\left(\frac{1}{4} + \frac{1}{5}\right) ... (a_0, a_1, a_2, \ldots)
-    - \sum_ {} \vec{F} = 0 ...  \ PV  \ = \  {A \over e^r - 1} 
-    - 
-\begin{bmatrix}
-1 & 0\\
-0 & 0\\
-\end{bmatrix}
-\begin{bmatrix}
-0 & 0\\
-0 & 1\\
-\end{bmatrix}
-\begin{bmatrix}
-0 & 1\\
-0 & 0\\
-\end{bmatrix}
-\begin{bmatrix}
-0 & 0\\
-1 & 0\\
-\end{bmatrix}
- ... F_2(a, b) = a^b
-    - 
-\begin{align}
-& \left(\csc\left(A + \frac{\pi}{6}\right), \csc\left(B + \frac{\pi}{6}\right), \csc\left(C + \frac{\pi}{6}\right)\right) \\
-& = \left( \sec\left(A -\frac{\pi}{3}\right), \sec\left(B -\frac{\pi}{3}\right), \sec\left(C - \frac{\pi}{3}\right)\right)
-\end{align}
- ... \ell^*(t)
-    - F(x)=\mu(-\infty,x] ... F_n(a, 0) = 0
-    - \quad A \cdot (A + B) = A ... = [(p_1,0,0,p_1)+(p_2,0,p_2\sin\theta, p_2\cos\theta)]^2 = (p_1+p_2)^2 -p_2^2\sin^2\theta -(p_1 + p_2\cos\theta)^2 \,
-    - \langle a, b \mid a^2, b^3, (ab)^{13}, [a, b]^5, [a, bab]^4, (ababababab^{-1})^6 \rangle ... \; [R_\pi(\varrho_{A_1\ldots A_m})]_{i_1j_1,i_2j_2,\ldots,i_nj_n}\equiv\varrho_{\pi(i_1j_1,i_2j_2,\ldots,i_nj_n)}
-
-    - \mathbf{K}=h\hat{x}^* + k\hat{y}^* + l\hat{z}^*=(2\pi/a)(h\hat{x} + k\hat{y} + l\hat{z}) ... m_\text{red} \leq m_1, \quad m_\text{red} \leq m_2 \!\,
-    - \left| \left\langle f,{{g}_{m}} \right\rangle  \right| ... Q=\frac{\pi L}{2\lambda (1-r)}
-    - 
-\begin{align}
-df(x_t,t) & =  \theta x_t e^{\theta t}\, dt + e^{\theta t}\, dx_t \\[6pt]
-& = e^{\theta t}\theta \mu \, dt + \sigma e^{\theta t}\, dW_t.
-\end{align}
- ... x(0) = \left. {\frac{{dx}}{{dt}}} \right|_{t = 0} = 0
-    -     X_n\ \xrightarrow{d}\ X,\ \ Y_n\ \xrightarrow{d}\ c\ \quad\Rightarrow\quad (X_n,Y_n)\ \xrightarrow{d}\ (X,c)
-   ... \mu_n(E)\to \mu(E),~\forall E\in \Sigma. 
-    - \alpha >1 ... \frac{\pi^5}{120} R^{10}
-    - \textbf{G}(\textbf{r}, \textbf{r}^{\prime}) = \frac{1}{4 \pi} \left[ \textbf{I}+\frac{\nabla \nabla}{k^2} \right] G(\textbf{r}, \textbf{r}^{\prime})  \, ...  \; 0 \log_2 0 = 0
-    - \mbox{M} = \frac{100%}{n}\sum_{t=1}^n \left| \frac{A_t-F_t}{A_t}\right|,  ...  (\tilde{\nu}) 
-    - [\mathfrak{g},I]\subseteq I, ... 
-C_{4,3/4}=
-\begin{bmatrix}
-c_1&c_2&c_3&0\\
--c_2^*&c_1^*&0&c_3\\
--c_3^*&0&c_1^*&-c_2\\
-0&-c_3^*&c_2^*&c_1
-\end{bmatrix},
-
-    - a = b \times c ...  \int_{\mathbf{R}} \psi_{n_1, k_1}(t) \psi_{n_2, k_2}(t) \, d t = \delta_{n_1, n_2} \delta_{k_1, k_2}, 
-    - w=Az^n, \, ... V(r,t)  = \frac {1}{4 \pi} \int_{S}  \left\{[V] \frac {\partial}{\partial n} \left(\frac {1}{s}\right) - \frac {1}{cs} \frac {\partial s}{\partial n} \left[\frac{\partial V}{\partial t}\right] - \frac{1}{s} \left[\frac{\partial V}{\partial n} \right] \right\} dS 
-    - T_v = \log_2 ...  0 = x r \cos \varphi + y r \sin \varphi - z \sqrt{R^2-r^2} \,\!
-    - \dot{v}_4 =  -({1 \over {C_4 R_6}} + {1 \over {C_4 R_2}}) v_4 + {1 \over {C_4 R_2}} v_3 + { 1 \over {C_4 R_6}} v_1 ...  COP_{heating}=\frac{T_{hot}}{T_{hot}-T_{cold}} 
-    -  V_G = V_{ch} + E \ t_{ins} = V_{ch} + \frac {Q t_{ins}}{\kappa \epsilon_0},  ... \begin{align}\operatorname{MSE}(S^2_{n-1})&= \frac{1}{n} \left(\mu_4-\frac{n-3}{n-1}\sigma^4\right) \\
-&=\frac{1}{n} \left(\gamma_2+\frac{2n}{n-1}\right)\sigma^4,\end{align}
-    - \mu^\circ_{solid} = \mu^\circ_{solution}\, ... = 2(2\eta^{\rho \sigma} - \gamma^\sigma \gamma^\rho) \gamma^\nu - 4 \gamma^\nu \eta^{\rho \sigma} \,
-    - n_1=\pm\frac{1}{\sqrt 2},\,\,n_2=\pm\frac{1}{\sqrt 2},\,\,n_3=0,\,\,\tau_\mathrm{n}=\pm\frac{\sigma_2-\sigma_3}{2}\,\! ... \left \lfloor \frac{a}{b} \right \rfloor \quad \left \lceil \frac{c}{d} \right \rceil
-    - {\mathbf{f}} ...  \mathrm{N}(n,S) = \#\{ m \in S : m \le n \} . 
-    - K_2 = {{}^\star R}_{abcd} \, R^{abcd} ... Ax^2 + Bxy + Cy^2 = -(Dx + Ey + F). \,
-    -  S_{n-1}  ... S_1 := \emptyset
-    - \nabla \times \frac{1}{\mu} \nabla \times - (\omega^2/c^2) \varepsilon ... x \leftarrow x+lb_{computed}
-    - V_n(R) = \frac{\pi^{n/2}}{\Gamma(\frac{n}{2} + 1)}R^n, ... \sqrt{\frac{1}{8}}\!\,
-    -  m(\varphi) = \int_0^\varphi\frac{a(1-n)^2(1+n)}{\left (1 + 2n \cos 2\varphi + n^2 \right )^{3/2}} \, d\varphi. ... \lambda_{12}=7.01559
-    - 
-\omega_{r}^{2} = \frac{1}{m} \left[ \frac{d^{2}V}{dr^{2}} \right]_{r=r_{\mathrm{outer}}}
- ... \mathbb{P} \left( \max_{1 \leq k \leq n} | S_{k} | \geq \alpha \right) \leq \frac{27}{\alpha^{2}} \mathrm{Var} (S_{n}).
-    - \sin(\theta) = \sin(\arcsin x)  ...  u v \, \partial_u + \frac{1-u^2+v^2}{2} \partial_v 
-    - \scriptstyle E^{0}_n ... S_g+S_m=0
-    - M = \alpha \cdot u v^*, \quad \mbox{where} \quad \|u \| = \|v\| = 1 \quad \mbox{and} \quad \alpha \geq 0 . ...  F'_{-}
-    - a_k(0) ... \frac{A}{x - 1}
-    - \psi_k(x) = \sqrt{2/\pi}\sin(k x) ... while X\ne Y
-    - c({\alpha}) ... k \leq 3
-    -  \dfrac{d^a}{dx^a}x^k=\dfrac{\Gamma(k+1)}{\Gamma(k-a+1)}x^{k-a}\;. ... \sum_{P \in C}{c_P [P]} + \sum_{P \in C}{d_P [P]} = \sum_{P \in C}{(c_P + d_P)[P]}
-    - \operatorname{Tr } \Lambda^n(K) = \frac{1}{n!}\int\cdots\int \det K(x_i,x_j)|_{1\leq i,j\leq n}\,dx_1\cdots dx_n ... \{ \mathfrak{p} \in \operatorname{Spec}A | A_\mathfrak{p} \text{ is integrally closed} \}
-    - 1^1 \cdot 2^2 \cdot 3^3 ... [Z]_i
-    - \frac{\sum_{k=1}^\eta d(k)}{\eta} \approx \ln \eta + 2\gamma - 1, ... b_1, b_2, \dots,b_d 
-    - \Phi(\eta, \tau) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty} \Pi(t,f) \exp (-j2\pi(t\,\eta-f\,\tau))\, dt\, df, ... y = r \sin \left ( \theta + \omega t \right ) 
-    - \textstyle\rho = |i\rang\lang i| ... x^n,
-    - y^2-z^2=1, ... a_i,
-    - (6k + 1)(12k + 1)(18k + 1) ... 2\ f\ x = f\ (f\ x) 
-    - \mathbb{N} = \left\{0, 1, 2, 3, \dots\right\} ... {17 + 20 + 22 + 21 + 2 + 6 + 10 + 14 + 3 + 16 + 12 + 7}
-    - (P \wedge (P \to \bot)) ... C\ge 0
-    - 
-\begin{bmatrix}
-\omega^2 m - 2 k & k \\
-k & \omega^2 m - 2 k
-\end{bmatrix} \begin{pmatrix} A_1 \\ A_2 \end{pmatrix} = 0
- ... x^2 + y^2 + 10 = 0 
-    - {x\!:\!\sigma \in \Gamma}\over{\Gamma \vdash x \Rightarrow \sigma } ... \mathit{d}_H(\mathit{p},\mathit{q})
-    - M_\mathrm{tot} ... z = 1/2\,
-    - A = \begin{pmatrix}1&1&2\\
-3& 1& -1\\
-\end{pmatrix} ... \tilde{\mathbf n} = - \hat{\mathbf n}
-    - 
-\sum_{n=1}^\infty \frac1n
- ... \text{X}
-    - \omega_{cyc} = \omega_{rad}/2\pi\, ... \begin{matrix}\omega_{ce} > 1/\tau \\
-\hbar \omega_{ce} > k_B T \\
-\end{matrix}
-    - x,y_1,\ldots,y_n ... (X,\mathcal{F},\mu)
-    - \mathrm{C} = \tfrac{1}{n_p-1}\sum_{i=1}^T \mathbf{x_i}\mathbf{x_i^T}, ...  F^1 \subset F^2\subset \cdots \subset F^m \, 
-    - \bold j = \frac{1}{2m}\left[\left(\Psi^* \bold{\hat{p}} \Psi - \Psi \bold{\hat{p}} \Psi^*\right) - \frac{2q}{c} \bold{A} |\Psi|^2 \right]\,\! ... \mathbb{C}\mathbf{P}^1
-    - \text{Var}\left(\hat{\alpha} + \hat{\beta}x_d\right) = \text{Var}\left(\hat{\alpha}\right) + \left(\text{Var} \hat{\beta}\right)x_d^2 + 2 x_d\text{Cov}\left(\hat{\alpha},\hat{\beta}\right) . ... 
-\begin{align}
-X &=\sum_{i=1}^N \langle \phi_i,X\rangle \phi_i\\
-&=\sum_{i=1}^N \phi_i^T X \phi_i
-\end{align}
-
-    -  S\ = \gamma_{SG}-(\gamma_{SL}+\gamma_{LG}) ... \mathbb{N}_{0}
-    - P^{\prime }=(w,\vec{0}), ... \mathbf{A} = \begin{pmatrix} 
-a & b
-\end{pmatrix}\,, \quad \mathbf{B} = \begin{pmatrix} 
-p & q \\
-r & s
-\end{pmatrix}\,, \quad \mathbf{C} = \begin{pmatrix} 
-x \\
-y \\
-\end{pmatrix}\,,
-    - 
-\Phi(z,s,a)=\sum_{k=0}^n \frac{z^k}{(a+k)^s}
-+z^n\sum_{m=0}^\infty (1-m-s)_{m}\operatorname{Li}_{s+m}(z)\frac{(a+n)^m}{m!};\ a\rightarrow-n 
- ... B_{max} \approx R
-    - \displaystyle{e^{tM}(0,0,b)=Je^{tN}J(0,0,b)=Je^{tN}(b,0,0)=(0,0,e^{tN}b).} ... f(x) = \lim_{r\to 0^+} M^rf(x). \, 
-    - 2 (2^{13-1}-1)/13 = 630  ... o_{ck} = \sum_{u=1}^N \frac{the~number~of~c-k~pairs~in~u}{m_u - 1} = o_{kc}
-    - (0,0)\, ... \sigma_\varphi(R) = \{ \ t : t \in R, \ \varphi(t) \ \}
-    -  t_i \cdot \pi \cdot  \frac{K_{i}}{K} ... (A \rightarrow (A \rightarrow B)) \rightarrow (A \rightarrow B)
-    - \hat{K} ... \lambda_p \leq \lambda_s \leq \lambda_i
-    - \Omega\simeq 500\rm Hz ... C_{\alpha \beta}=\langle \psi_\alpha |\psi_\beta\rangle
-    - S(a,q,x) ...  L_1(\beta)=L_2(\beta) = 1 
-    -  K_e= \{ x \in S\;|\; \exists n>0:\; x^n \in G_e \}  ... 
-P(\sup_x|F(x)-F_n(x)|>\varepsilon)\le2e^{-2n\varepsilon^2}.
-
-    - D>0 ... f = \frac{f_0}{\gamma}
-    - l,m,l',m' ...  \Gamma_L = 0 \, 
-    -  K =k_1 + \cdots + k_n ... B = \frac{4}{a-d}
-    - \mathbf{F} = \frac{q_1 q_2}{r^2} \mathbf{\hat r} ... \bold{v} = (v_1, \ldots, v_n)
-    - \{\{1, 2, 3,\ldots\}, \{2, 3, 4,\ldots\}, \{3, 4, 5,\ldots\},\ldots\} ... \tilde K_0(A)=\operatorname{Pic} A.
-    - U = - U_\text{Kin}, \,  ...  \max E \left[ \int_0^T e^{-\rho s}u(c_s) \, ds +  e^{-\rho T}u(W_T) \right] 
-    - \theta=\frac{t-\pi}{2} ... T(A, R) = 1 + A\cdot R^2
-    - 
-\begin{matrix}
-x^2\\
-\qquad\qquad\quad x-3\overline{) x^3 - 2x^2 + 0x - 4}\\
-\qquad\;\; x^3 - 3x^2
-\end{matrix}
- ... k = R/(f_1, \dots, f_n)
-    - \bar\psi(x_i) ... VHC = \rho c_p
-    - \scriptstyle \eta(x)=\zeta(x)=1  ... A \rightarrow B: A
-    - Q_{CA} \, ...  F 
-    - \scriptstyle f(x_1,x_2,x_3)=0. ... \bold{\bar{3}}
-    - \int_{-\frac{a}{2}}^{\frac{a}{2}} x^2\cos^2 {\frac{n\pi x}{a}}\;\mathrm{d}x = \frac{a^3(n^2\pi^2-6)}{24n^2\pi^2}   \qquad\mbox{(for }n=1,3,5...\mbox{)}\,\! ... G=\Delta_x
-    - a ^ b = a \cdot (a ^ {(b - 1)}),\,\! ... \tilde{\Gamma}
-    - 2^{2^{6}} + 1 = 2^{64} + 1 = 274177 \times 67280421310721 ... x_{max}
-    - y_t = \frac{ r_n(\rho - R)}{\rho - r_n} ... f(x)=\sum_{n=1}^\infty {a_n \over n!} x^n \qquad
-\mathrm{and} \qquad g(x)=\sum_{n=1}^\infty {b_n \over n!} x^n.
-    -  h_k=\operatorname{dim}_{\mathbb{Q}}\operatorname{IH}^{2k}(X,\mathbb{Q})  ... T(w) = 2^{|w|}
-    -  r_n = r_{n-1} - \frac{f(r_{n-1})}{ (r_{n-1}-p_n)(r_{n-1}-q_n)(r_{n-1}-s_{n-1}) };  ... (\forall u)(\exists v)(P)
-    - \alpha \,  ... \tau=1\;
-    - p V\; ... \nabla f({\mathbf x}_0) \cdot {\mathbf \gamma}'(0)=0.
-    - M_{\mathrm{left}}^{\mathrm{fixed}} = \int_{0}^{L} \left \{ - q_0 \frac{x}{L} dx \frac{x (L-x)^2}{L^2} \right \} = - \frac{q_0 L^2}{30} ... (a + P\cdot b)/(a+b) .
-    - \eta = 2 \rarr \delta = \frac{\gamma +1}{2}  ...  \sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots. 
-    - e^2/kT=1.44\times10^{-7}\,T^{-1}\,\mbox{cm} ... D(l,m,n)=\langle x,y \mid x^l,y^m,(xy)^n\rangle.
-    - \tau = - m g L \sin\theta\, ... 1 = \chi(1)
-    - [Rf_!\mathcal{F},\mathcal{G}] \cong [\mathcal{F},f^!\mathcal{G}] . \,\! ... \hbar = \frac{1}{\alpha} \approx 137.035999679 
-    - F(x,u,u',\ \cdots,\ u^{(n)})=0 \quad x \in I. ... NaN
-    - f(x_1)+f(x_2) = f(x_1+x_2) ... t=t'-(q_{hash}+q_{sig}+1) \cdot \mathcal{O}(k^3)
-    - \frac{f_{\theta_1}(x_1)}{f_{\theta_0}(x_1)} \geq \frac{f_{\theta_1}(x_0)}{f_{\theta_0}(x_0)}, ... \phi:M\to \prod_{i\in F}R\,
-    - (a \and b) \rightarrow c ... \tau_b\propto \exp[\Delta U/(k_B T_f)]
-    - X_j = \alpha^{i_j} ... a^{(N-1)/2} \equiv -1\pmod{N}\!
-    -  \left( a - \lambda \right) \left( b-\lambda\right) -c^2 = 0  ... u(0,x)= 0
-    - \left( \mathcal{P} (M), \pi \right) ... |E_g|\approx\frac{GM}{R} = E_k\approx\frac{M^{2/3} N^{5/3} \hbar^2}{2m R^2}.
-    - N=\frac{ln (1-0.99)}{ln [1-\frac{2.0\times10^4 basepairs}{3.0\times10^9 basepairs}]} ...  \frac{-1+\frac{2a e^{\tfrac{a}{b}} {\rm E}({1-\tfrac{1}{b}},\tfrac{a}{b}) }{b}}{a^2} 
-    - \displaystyle A^\top Ax=A^\top b ... y = mx + b \,
-    - (\nabla\cdot\nabla) \mathbf{A} = (\nabla_i \nabla_i) \mathbf{A}  ...  p \approx 2^{-20} 
-    - M \le n < M + R. ...  \frac{P(x)}{(1-x)(1-x^2)\cdots(1-x)^n}  = \prod_{(i,j)\in \lambda} (1-x^{h_{(i,j)}})^{-1} 
-    - c=1+3.535\omega+0.533\omega^2 ... \begin{matrix} {2 \choose 1}{2 \choose 1}{11 \choose 4}{4 \choose 1}^4 \end{matrix}
-    -  \int f_n \geq \int \limits_{E_n} f_n \geq \alpha \int \limits_{E_n} \phi  ... \mathrm{[OH^-]} = \frac{K_{\mathrm w}}{\mathrm{[H^+]}}
-    - D_0(f)=\int_{-\infty}^\infty x^2|f(x)|^2\,dx. ... z \mapsto z^n
-    - \exists p\,\phi ... {\pi\over 5}\ {\pi\over 5}\ {2\pi\over 3}
-    -  x_{n+1} - x_n = b_n(\alpha - N(x_n)), \qquad \bar{x}_n = \frac{1}{n} \sum^{n-1}_{i=0} x_i  ... u = 0.999999
-    - {P_{Rx}} ...  L_t = (L^x_t)_{x \in E}
-    - n = \frac{\lambda}{\Delta x}\,\! ...  G_r^\pm
-    - U(x) = \sum_{i\in \mathbb{Z}} L(x-i) ... \{p_3, r_3\}
-    - 
-\begin{align}
-a_{11}x_1 + \cdots + a_{1n}x_n &= a_{1,n+1}\\
-&\vdots&\\
-a_{n-k,1}x_1 + \cdots + a_{n-k,n}x_n &= a_{n-k,n+1}.
-\end{align}
- ... wp(S, R)
-    - J-1 ... (x-a)(x-b)(x-c)=0
-    - 
-m  , m-2 ,  m-4 ,  \dots . \,
- ... \Lambda(A_1:A_2|B) = \frac{P(B|A_1)}{P(B|A_2)} ,
-    -  \widehat{\mu}(x) =  \int_{\widehat{G}} \overline{X(x)} \, d \mu(X), \quad x \in G  ...  P\left[ \bigcap_{i = 1 }^n \frac{ | X_i - \mu_i | }{ \sigma_i  } \le k_i \right] \ge \prod{ ( 1 - \frac{ 1 }{ k_i^2 } ) } 
-    - \textstyle I(P) ...  (\mathbf{AB})^\mathrm{T} = \mathbf{B}^\mathrm{T}\mathbf{A}^\mathrm{T} 
-    - \mathrm{^{238}_{\ 92}U + \,^{1}_{0}n \;\rightarrow\; ^{239}_{\ 92}U \;\rightarrow\; ^{239}_{\ 93}Np + \beta \;\rightarrow\; ^{239}_{\ 94}Pu + \beta} ... x^4+px^2+q=0
-    - \lambda (n) = (-1)^{\Omega(n)}.\; ... \frac{dz(t)}{dt}=-\beta*y(t)
-    -  |\mathcal{F}| > \sum_{i=0}^{k-1} {\binom{n}{i}}  ... \scriptstyle r\searrow 1 
-    - j = \left\lfloor {k \cdot r} \right\rfloor = \left\lfloor {m \cdot s} \right\rfloor \,. ... 
-\sum_r {x_{ij}^r  = T_{ij} } 
-
-    - \mathrm{laea}_y ... {\bar{R}}_3
-    - \mathbf{e}^i\cdot\mathbf{e}_k=e^{ij}\mathbf{e}_j\cdot\mathbf{e}_k=e^{ij}e_{jk} = \delta^i_k. ... p(y|\theta,\xi)\,
-    - \bold{j}_\perp ... p_O
-    -  [x_1, \; x_2, \; x_3]  ...  \alpha 
-    - N(L/K) ... F_N \in H(N,N),
-    -  \int\frac{x^k \, dx}{\sqrt{Q(x)}}  ... \lim_{n \to \infty} \varphi(t_n, x) = y 
-    - \langle a \rangle\,\! ... \mu_1,\ldots,\mu_c
-    - \vec{A} ... \Delta w''=w''(x+)-w''(x-)
-    - \textstyle T = \left( \begin{array}{cc} 3 & 4 \\ 2 & 3 \end{array} \right) ... \scriptstyle S^3
-    - 
-Q_n^{(c)}(t) < \sum_{b=1}^N\mu_{nb}^{(c)}(t)
- ...  m \ge \sqrt{\frac{(n+1)d}{2}} - \sqrt{\frac {(n+1)d}{2}} + \frac{d}{2} - 1 = \frac{d}{2} -1 
-    - d_\mathrm{i} ... \sigma^2_W/\mu_W
-    - 0! = 1, \  ... \frac{a_{2}}{a_{1}}={(\frac{T_{2}}{T_{1}})}^{0.5}
-    - \ \beta = 180   ... dV = r^{n-1}\sin^{n-2}(\phi_1)\sin^{n-3}(\phi_2) \cdots \sin(\phi_{n-2})\,
-dr\,d\phi_1\,d\phi_2 \cdots d\phi_{n-1},
-    - Z_{11} = {((1 + S_{11}) (1 - S_{22}) + S_{12} S_{21}) \over \Delta_S} Z_0 \, ... ZZ_3 = E
-    -  y_i = \begin{cases} 
-    y_i^* & \textrm{if} \; y_L<y_i^* <y_U \\ 
-    y_L   & \textrm{if} \; y_i^* \leq y_L \\
-    y_U   & \textrm{if} \; y_i^* \geq y_U.
-\end{cases} ... {(1+z)^2}
-    - \frac{4}{3} \log(g(\Sigma)), ...  \varphi  = \varphi \,
-    - F_W = 6\cdot\pi\cdot\eta\cdot\text{r}_{H}\cdot\nu ... \widetilde{f} \left( \sum_{i=1}^n l_i e_i\right) := f \left( \sum_{i=1}^n l_i^\theta e_i \right) 
-    - \log_{\sqrt{2}}3 ...  \omega  
-    - \Delta k=k_3-k_1-k_2 ... \mathcal E^\bullet=\bigoplus_i \Gamma(E_i)
-    - 
-V(t)  = V_o e^{-t / \tau}
- ...  \textbf{P}_{k\mid k-1}^{a} = \begin{bmatrix} & \textbf{P}_{k\mid k-1} & & 0 & \\ & 0 & &\textbf{R}_{k} & \end{bmatrix} 
-    -  \kappa = 0 \, ... M_r=\frac{2}{\pi}\int_{0}^{\frac{\pi}{2}}\!M(\varphi)\,d\varphi\!
-    -  p(x|m) = \exp (V(x))  ...  u(0,x,y,z) = 0, \quad u_t(0,x,y,z) = \phi(x,y,z). \,
-    - s * (hi + ho + 1) * 2 - s ... \gamma_i(t)=P(X_t=i|Y,\theta) = \frac{\alpha_i(t)\beta_i(t)}{\sum_{j=1}^N \alpha_j(t)\beta_j(t)}
-    - \forall x . R(x,f(x)) ... K\to R
-    - S^{n-1} \to S^n ... f:X\to\mathbb R^k, \ f(x)= (f_1(x),\ldots,f_k(x))^T
-    - Y\left( \begin{bmatrix} 1 \\ 0 \end{bmatrix},z\right) = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} ... r\in\C
-    - \varnothing\vdash A ...  f^\downarrow( q_l, q_r ) = f( q_l ) 
-    - \Gamma_\phi ... \hat{\rho}(t)=\hat{U}^{\dagger}(t)\hat{\rho}(0)\hat{U}(t)
-    - k^2 = \frac{1}{\hbar^2}2mE_n ... f_{y}
-    - 1/x = 1 - (x-1) + (x-1)^2 - (x-1)^3 + (x-1)^4 - ... ... \sqrt{S} = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{a_3+\,\ddots}}} 
-    - \kappa = 8/3 ... \nabla:\Omega^pM\rightarrow T^*M\otimes\Omega^pM
-    - \scriptstyle |U| ...  C = -\sum_j d_j \log(p_j) 
-    - P < Q/2 ... 0 \to A\times 0
-    - 220_5 = 214.\overline4_5 ... f(n)\geq\log_2(n!).
-    - ckl@ckl ... \sum_{k \geq 3} (k-2) (f_k-g_k) = 0.
-    - c_k=\frac{1}{2\pi}\int_{-\pi}^\pi f(t)e^{-ikt}dt, ... \Delta H_{fus} \, = \, -0.88 + \sum H_{fus,i}
-    - z_1 z_2 = r_1 r_2 (\cos(\varphi_1 + \varphi_2) + i \sin(\varphi_1 + \varphi_2)).\, ... \scriptstyle f \;=\; t_A / (t_A \,+\, t_B) \;=\; 0.75
-    - f(x^*) ... 
-W = T \cos \theta ,\quad F = T \sin \theta
-
-    - 1\otimes v_\lambda ...  -1 + \sum_{k=0}^n \binom{n}{k} \frac{2^{n-k+1}}{n-k+1}B_{k}(0) = [n=0] 
-    - 
-F=\frac{X/\nu_1}{Y/\nu_2}
- ... = \omega^2 v t \left(\cos\alpha, \sin\alpha\right )=\omega^2 \mathbf{r_B}(t) \ .
-    - \| u_j \| \leq 1 . ... 
-E =
-\begin{cases} \displaystyle
-x + \frac{1}{60} x^3 + \frac{1}{1400}x^5 + \frac{1}{25200}x^7 + \frac{43}{17248000}x^9 + \frac{ 1213}{7207200000 }x^{11} +
- \frac{151439}{12713500800000 }x^{13}+ \cdots \ | \ x = ( 6 M )^\frac{1}{3}
- ,  & \varepsilon = 1  \\
-\\
-\displaystyle
-  \frac{1}{1-\varepsilon} M
-- \frac{\varepsilon}{( 1-\varepsilon)^4 } \frac{M^3}{3!}
-+ \frac{(9 \varepsilon^2 + \varepsilon)}{(1-\varepsilon)^7 } \frac{M^5}{5!}
-- \frac{(225 \varepsilon^3 + 54 \varepsilon^2 + \varepsilon ) }{(1-\varepsilon)^{10} } \frac{M^7}{7!}
-+ \frac{ (11025\varepsilon^4 + 4131 \varepsilon^3 + 243 \varepsilon^2 + \varepsilon ) }{(1-\varepsilon)^{13} } \frac{M^9}{9!}+ \cdots
-, &  \varepsilon \ne  1
-
-\end{cases} 
-    - F(a,t) = a\, ... W^{\mathbb C} \cong W\oplus \overline{W}.
-    - \pi / 4 ...  \tilde{h}^{ab} \frac{\partial}{\partial \tilde{\sigma}^a} X^\mu \frac{\partial}{\partial \tilde{\sigma}^b} X^\nu =  h^{cd} \frac{\partial \tilde{\sigma}^a}{\partial \sigma^c} \frac{\partial \tilde{\sigma}^b}{\partial \sigma^d} \frac{\partial}{\partial \tilde{\sigma}^a} X^\mu \frac{\partial}{\partial \tilde{\sigma}^b} X^\nu = h^{ab} \partial_a X^\mu \partial_b X^\nu 
-    - \int_{-\infty}^\infty \delta(\tau)\, g(t - \tau)\, d\tau = g(t) ... \Delta\;h = u\cdot \Delta\;v_w
-    - \chi_\text{e}^\text{SI} = \chi_\text{e}^\text{LH} = 4\pi \chi_\text{e}^\text{G} ... 2\ell+1
-    - \log(f(z)/z)=2 \sum^\infty_{n=1}\gamma_nz^n. ... \frac{3}{2}k_{\rm B} T  = \frac{m}{2} v_{\rm rms}^2
-    - \rho > 2b/2D ... \!X[F/x] = \{ s[F(s)/x] : s \in X\}
-    - Rb = 1 ... \operatorname{nassoc}(A, B) = \frac{w(A, A)}{w(A, V)} + \frac{w(B, B)}{w(B, V)}
-    -  \Delta_{ti}  ... 2\, 
-    - p\mathrm{[H_2]} ... -\frac{1}{\theta} \log\!\left( 1+\frac{(\exp(-\theta u)-1)(\exp(-\theta v)-1)}{\exp(-\theta)-1} \right)
-    - %\text{ ohms reactance on kva base}_2=\frac{\text{kva base}_2}{\text{kva base}_1} * %\text{ ohms reactance on base}_1 ... P(\text{well}\cap\text{positive})=P(\text{well})\times P(\text{positive}|\text{well})=99%\times1%=0.99%.
-    - 
-\begin{align}
-(1)  ~~~e > e_s > e_i \\
-(2)  ~~~e_s > e > e_i \\
-(3)  ~~~e_s > e_i > e \\
-\end{align}
- ... \mathbf{x}_i^{t+1}=\mathbf{x}_i^t + \beta \exp[-\gamma r_{ij}^2] (\mathbf{x}_j^t - \mathbf{x}_i^t) +\alpha_t \boldsymbol{\epsilon}_t 
-    - \scriptstyle n\geq 1  ... m(t) = \mathbb{E}[N(t)]
-    -  Z_N(K,L) = 2 e^{N(K+L)} \sum_{ P \subset \Lambda_D} e^{-2Lr-2Ks}  ... b(x) = x-a
-    - \sum_i T_{\mathrm{actual}}(o_i) ... \binom{n}{l}
-    - (X_{2}=\cos\Omega t,Y_{2}=-\sin\Omega t,Z_{2}=0)^{T} ... \alpha = x/\sqrt{2} - \pi/8
-    - G\in \mathcal{P} ... \mathrm{Sh} = 2 + 0.6\, \mathrm{Re}^{\frac{1}{2}} \, \mathrm{Sc}^{\frac{1}{3}}, ~ 0 \le ~ \mathrm{Re} < 200, ~ 0 \le \mathrm{Sc} < 250
-    - \frac{dTR}{dP} = Q\left(f'(P) \cdot \frac{P}{Q} + 1\right) ... A_\text{pfd} = 
-    - S\in\tbinom{[n]}m ... m_i \equiv m \mod p_i
-    - f : E \to E'. ... \omega\in\Lambda
-    -  A(\eta) = -\log(\theta) = -\log(-\eta) ... L_{0}=Tv
-    - X:=(x^2-y^3=0) \subset W:= \mathbf{R}^2. ...  D_3(z)=2+Kz -22 z^2 +24 z^3
-    - \mathbb R^3 ... \psi(\bar{x})
-    - \theta_2=62.25^\circ ... F_i^{-1}
-    -  x_{r,s}\geq 0  ... S_i[p..n_i]
-    - \displaystyle{ f_s(z)=f_t(\varphi_{s,t}(z)).} ... d = \frac{(b+d)-(b-d)}{2}\, ,
-    -  \cos(20^\circ) \cdot \cos(40^\circ) \cdot \cos(80^\circ)=\frac{1}{8}. ... z = -(Dx + Ey + F).
-    -  c_\beta = \sum_{n\ge 1} {\operatorname{mult}(\beta/n)\over n}. ... F^V
-    - Q_{s3} =  q_{1} - q_{2} + q_{3} - q_{4}\! ... 
-    \Pr(X = k) = \left(\frac{r}{r+m}\right)^r \frac{\Gamma(r+k)}{k! \, \Gamma(r)} \left(\frac{m}{r+m}\right)^k \quad\text{for }k = 0, 1, 2, \dots.
-  
-    - \eta \colon \mathcal{S}(X) \to \mathcal{N} (X) ... V_{i}
-    - x_{n+1}=g(x_n) ... \big(f(p),g(l)\big) \in I'
-    - [0,1,0,0,0] ... \gamma/r^2
-    - f(x)=\sum_{n=0}^\infty a_n x^n ... N=2k(a\phi(front)-b\phi(rear))=2k(a-b)(\theta-\psi)-2k\frac{(a^2+b^2)}{V}\frac{d\theta}{dt}+2ka\eta 
-    -  \begin{matrix}\frac{1}{2}\end{matrix} (m_\textrm{b}+m_\textrm{p})\cdot v^2 = (m_\textrm{b}+m_\textrm{p})\cdot g\cdot h  ... \sigma_{ij}=
-\begin{bmatrix}
-\sigma_1 & 0 & 0\\
-0 & \sigma_2 & 0\\
-0 & 0 & \sigma_3
-\end{bmatrix}
-\,\!
-    - E_F = \frac{\hbar^2}{2m_e} \left( 3 \pi^2 \ 10^{28 \ \div \ 29} \ \mathrm{m}^{-3} \right)^{2/3} \approx 2 \ \div \ 10 \ \mathrm{eV}  ... \Rightarrow_{S \to A}\  ASSS \ \Rightarrow_{S \to A}\  AASS \ \Rightarrow_{S \to A}\  AAAS \ \Rightarrow_{S \to A}\  AAAA
-    - \boldsymbol{c}_g=c_g\,\boldsymbol{e}_k ... i \in G
-    - d_{i,j}=f \Big ( \Big| x_i - x_j \Big | \Big ) ... \mathbf{x}'_i\boldsymbol\beta
-    - \Delta t > \Delta \tau\, ... \displaystyle K=\sqrt{(e+f+g+h)(efg+fgh+ghe+hef)}.
-    -  \|f\|_r = \max_{|z| \le r} |f(z)| =  \max_{|z| = r} |f(z)| ... X_k = \sum_{n=0}^{N-1} x_n e^{-\frac{2\pi i}{N} nk }
-\qquad
-k = 0,\dots,N-1. 
-    - \{ H_n(\theta) \} ...  \operatorname{build-param-lists}[\lambda q.\lambda x.x\ (q\ q\ x)), D, V, \_] 
-    - W_o ... y^* \,
-    -  \phi \wedge \chi \vdash \phi  ... \deg(P - Q) \leq \max(\deg(P),\deg(Q))
-    - 
-F = A \sigma
- ... \Phi_\Lambda
-    - \max(3,d)^{\min(n,s)}. ... \sum_{n=1}^{2^k} \,\frac{1}{n} \;\geq\; 1 + \frac{k}{2}
-    - a_{i,j} = -\overline{a_{j,i}}, ... 2\sin\left(54^\circ\right) = \phi 
-    -  Q - X_1 - X_2 - P(M_3,3) - P(M_4,4) - P(M_5, 5) ... \left[E_k(\mathbf{R})+\mathcal{T}_\mathrm{k}(\mathbf{R})\right]
-    - n\times\log_2(n) ... 3^i5^j7^k
-    - \mu_2=\mu_2^+-\mu_2^- ... 
-\mathbf{M} = \chi_v \mathbf{H}
-
-    - \frac{1}{x}R ... (2)\quad B_{ab}=h^c_{\;\;a}\, h^d_{\;\;b}\, \nabla_d Z_c = \nabla_b Z_a +A_a Z_b\;,
-    - F = \frac{\Delta p}{\Delta t} = \frac{m v_x^2}{L}. ... 10\uparrow\uparrow\uparrow 8=(10 \uparrow \uparrow)^8 1
-    - PGL(2,5) \cong S_5, ... \left|\sum_{k=0}^n u_k \right|^p \le \sum_{k=0}^n |u_k|^p \text{ when } p<1 
-    - T^2 = \frac{n_1 n_2}{n_1+n_2}(\overline{\mathbf x}_1-\overline{\mathbf x}_2)'{\mathbf S_\text{pooled}}^{-1}(\overline{\mathbf x}_1-\overline{\mathbf x}_2). ... c_\eta(a,b)=\frac{\mathrm{sinh}\beta b}{2b(\mathrm{cosh}\beta a-\eta\,\mathrm{cosh}\beta b)}
-    -  \mathbb{N}, x_{1} ... x_{n} ... \varnothing = \{u \in w \mid (u \in u) \land \lnot (u \in u) \}
-    - f(t)=(t-1)^2+(t^3-1)^2-10 ... 
- \Beta(x,y) \cdot \Beta(x+y,1-y) =
-  \dfrac{\pi}{x \sin(\pi y)},
-\!
-    - L \subseteq X \times Y ... \begin{align}
-  r(t) &= s(t) \cos (2 \pi f_0 t) \\
-         &= I(t) \cos (2 \pi f_0 t)\cos (2 \pi f_0 t) - Q(t) \sin (2 \pi f_0 t)\cos (2 \pi f_0 t)
-\end{align}
-    - \{ f_n \} ... \tilde{P_n}(x) = \frac{1}{n!} {d^n \over dx^n } \left[ (x^2 -x)^n \right].\, 
-    - \hat{\Pi}\equiv I-\Pi ... \ |k_a|+|k_b|+|k_c| = 3
-    - \scriptstyle\pi/2 ... p_{\tfrac{1}{2}1} \leftarrow 64x^3+192x^2+80x+8
-    - 
-\mathbb{E}_{X^{n}}\left\{  \frac{1}{M}\sum_{m}\text{Tr}\left\{  \Pi
-_{\rho,\delta}^{n}\rho_{X^{n}\left(  m\right)  }\Pi_{\rho,\delta}^{n}\right\}
-\right\}  ... N\left(  \mathcal{S}\right)  
-    - \langle B, \in\rangle  ... -|1\rangle
-    - \log_{10}(P) = 10{.}3291 - \frac{1642{.}89}{351{.}47 - 42{.}85} = 5{.}005727378 = \log_{10}(101328\ \mathrm{Pa}). ... P_x=
-    - 
-   A = \cfrac{C_0^2 - T_0^2}{T_0} ~;~~ B = C_0 ~.
-  ... E \{ (\hat{x}_{\mathrm{MMSE}}-x)\hat{x}^T \} = 0.
-    - \alpha = ai\, ... \{ [M(OH)]^{(z-1)+} \} = K_{1,1}\{ M^{z+}\} \{OH^-\} 
-    -  g(z) = z + b_1 z^{-1} + b_2 z^{-2} + \cdots. ... c_m=\frac{e^{-m\gamma}}{m}\qquad \mathrm{for}\,m>0
-    - f(z) = \frac{P(z)}{Q(z)} ... n = 1,2,\cdots ,m
-    - a \in \mathcal{A} ... n_c
-    - \forall f_1, \forall f_2, \forall i \in \{1,2\},\ \pi_i \circ \langle f_1, f_2\rangle = f_i ...  f^{-1}\left( \, f(x) \, \right) = x
-    - V_m = \left( v_1, v_2, \cdots, v_m \right) ... \gcd(x,y) = \gcd(y, x % y)
-    - \textrm{Var}\left(X\right)=p\left(1-p\right).\, ... [Divs\ received\ from\ 3rd\ parties] -
-[Divs\ paid\ to\ 3rd\ parties] -
-\{ Divs\ paid\ to\ NCI\ but\ not\ intracompany\ div\ payments\ \}\,
-    - \tbinom{2m-2}{m-1} ... \sigma \left (\mathbf{P}^{2i_1}(\mathbf{C}) \times \dots \times \mathbf{P}^{2i_k}(\mathbf{C}) \right) = 1.
-    - p_s ...   \tau = \frac{Gb}{L-2r} \,\!
-    - C^q(\mathcal U, \mathcal F) ... \scriptstyle H\,=\,2\,a\,
-    - yx = (-1)^{|x||y|}xy\, ... I_i = \frac{V_i - V_o}{Z} = \frac{V_i (1 + A_v)}{Z}
-    - y^m = kx^n ... \sigma_{\theta\theta}\, 
-    - u'_2 ... E_0 = 1 \mathrm{\frac{MV}{m}}
-    - y = \left(y_1,y_2,\ldots,y_n\right)^\mathsf{T} ... z \simeq \beta = \frac{v}{c},
-    - \; (fg)^* = f^*g^* ... C_1;C_2
-    - \alpha = \frac{R_{100} - R_0}{100R_0} ...  d >> \sigma 
-    - \sqrt {-g} ... \scriptstyle\langle B^2\rangle = \langle B_{\theta}^2 + B_{\rho}^2\rangle
-    - X\backslash \{p\}  ... \ \sum_{w \in V} f_i(u,w) = 0.
-    -  W_{PPT}=|C_{n^{*}l^{*}}|^{2}\sqrt{\frac{6}{\pi}}f_{lm}E_{i}(2(2E_i)^{\frac{3}{2}}/F)^{n^{*2}-|m|-3/2}(1+\gamma)^{2})^{|m/2|+3/4}A_{m}(\omega, \gamma)e^{-(2(2E_i)^{\frac{3}{2}}/F)g(\gamma)}  ... ) \land 
-    -  (a \oplus b) \otimes c = a \otimes c \oplus b \otimes c  ... colgroups
-    - \mathrm{ker}(A) = (\mathrm{im}(A^\mathrm{T}))^\perp ... L^{p_0}(\mathbf{R}) \cap L^{p_1}(\mathbf{R}) \subset L^p(\mathbf{R}) \subset L^{p_0}(\mathbf{R}) + L^{p_1}(\mathbf{R}), \ \ \text{when} \ \  1 \le p_0 \le p \le p_1 \le \infty,
-    - g(r) ...  \frac{\det \left(-\frac{d^2}{dx^2} + A\right)}{\det \left(-\frac{d^2}{dx^2}\right)} = \frac{\sinh L\sqrt A}{L\sqrt A}. 
-    - \scriptstyle a \;\mapsto\; -a ...  \alpha_m ~ = ~ k_0 ~ \sin \theta_0 ~ \cos \phi_0 ~ + ~ \frac{2m\pi}{l_x} ~~~~~~~~~~~(2.2a) 
-    - F(x_1,x_2,\dots,x_n) = \prod_{i=1}^n \left ( \sum_{j=1}^n a_{ij} x_j \right ) = \left ( \sum_{j=1}^n a_{1j} x_j \right ) \left ( \sum_{j=1}^n a_{2j} x_j \right ) \cdots \left ( \sum_{j=1}^n a_{nj} x_j \right ). ... \mu_r = 1
-    - \nu_3 ... u^{+i}u^-_i = 1
-    - g_2(\tau) = {2\pi^4 \over 3} \left[\vartheta(0; \tau)^8+\vartheta_{01}(0;\tau)^8 + \vartheta_{10}(0; \tau)^8\right] ...  {x_N \choose \theta_N} = \lambda^N {x_1 \choose \theta_1} 
-    -  u(x,t)=v(x \pm ct)\equiv v(z),\,  ... f_1(c) = \|x-c\|_1
-    -  \frac{\Delta K}{K}  ...  \mathbf X'\tilde{\mathbf W}_\delta\mathbf X 
-    - H=1/2\sum (p_i)^2 ... z=ix
-
-  Run test for all mathjax-texvc commands:
-    ✓ 1$\thetasym$
-    ✓ 2$\koppa$
-    ✓ 3$\stigma$
-    ✓ 4$\coppa$
-    ✓ 5$\C$
-    ✓ 6$\cnums$
-    ✓ 7$\Complex$
-    ✓ 8$\H$
-    ✓ 9$\N$
-    ✓ 10$\natnums$
-    ✓ 11$\Q$
-    ✓ 12$\R$
-    ✓ 13$\reals$
-    ✓ 14$\Reals$
-    ✓ 15$\Z$
-    ✓ 16$\sect$
-    ✓ 17$\P$
-    ✓ 18$\AA$
-    ✓ 19$\alef$
-    ✓ 20$\alefsym$
-    ✓ 21$\weierp$
-    ✓ 22$\real$
-    ✓ 23$\part$
-    ✓ 24$\infin$
-    ✓ 25$\empty$
-    ✓ 26$\O$
-    ✓ 27$\ang$
-    ✓ 28$\exist$
-    ✓ 29$\clubs$
-    ✓ 30$\diamonds$
-    ✓ 31$\hearts$
-    ✓ 32$\spades$
-    ✓ 33$\textvisiblespace$
-    ✓ 34$\and$
-    ✓ 35$\orMediaWiki$
-    ✓ 36$\bull$
-    ✓ 37$\plusmn$
-    ✓ 38$\sdot$
-    ✓ 39$\sup$
-    ✓ 40$\sub$
-    ✓ 41$\supe$
-    ✓ 42$\sube$
-    ✓ 43$\isin$
-    ✓ 44$\hAar$
-    ✓ 46$\Harr$
-    ✓ 47$\Lrarr$
-    ✓ 48$\lrArr$
-    ✓ 49$\lArr$
-    ✓ 50$\Larr$
-    ✓ 51$\rArr$
-    ✓ 52$\Rarr$
-    ✓ 53$\harr$
-    ✓ 54$\lrarr$
-    ✓ 55$\larr$
-    ✓ 56$\gets$
-    ✓ 57$\rarr$
-    ✓ 60$\Alpha$
-    ✓ 61$\Beta$
-    ✓ 62$\Epsilon$
-    ✓ 63$\Zeta$
-    ✓ 64$\Eta$
-    ✓ 65$\Iota$
-    ✓ 66$\Kappa$
-    ✓ 67$\Mu$
-    ✓ 68$\Nu$
-    ✓ 69$\Omicron$
-    ✓ 70$\Rho$
-    ✓ 71$\Tau$
-    ✓ 72$\Chi$
-    ✓ 73$\Koppa$
-    ✓ 74$\Stigma$
-    ✓ 75$\Coppa$
-    ✓ 76$\uarr$
-    ✓ 77$\darr$
-    ✓ 78$\Uarr$
-    ✓ 79$\uArr$
-    ✓ 80$\Darr$
-    ✓ 81$\dArr$
-    ✓ 82$\rang$
-    ✓ 83$\lang$
-    ✓ 84$\arccot$
-    ✓ 85$\arcsec$
-    ✓ 86$\arccsc$
-    ✓ 87$\bold{x}$
-    ✓ 90$\pagecolor{red}x$
-    ✓ 91$\vline$
-    ✓ 92$\image$
-
-  Parse
-    ✓ should parse: ""
-    ✓ should parse: "a"
-    ✓ should parse: "a^2"
-    ✓ should parse: "a^2+b^{2}"
-    ✓ should parse: "l_a^2+l_b^2=l_c^2"
-    ✓ should parse texvc example
-    ✓ should parse texvc specific functions
-
-  Render
-    ✓ should correctly render ""
-    ✓ should correctly render "a"
-    ✓ should correctly render "a^2"
-    ✓ should correctly render "a^2+b^{2}"
-    ✓ should correctly render "a^{2}+b^{2}"
-    ✓ should correctly render "l_a^2+l_b^2=l_c^2"
-    ✓ should correctly render "\\sin(x)+{}{}\\cos(x)^2 newcommand"
-
-  Run test for all semantic LaTeX commands:
-    ✓ 1$\sinh(x)$
-    ✓ 2$P_a^{(b, c)}(d)$
-    ✓ 3$L_a(b)$
-    ✓ 4$L_a^{(b)}(c)$
-    ✓ 5${\rm sn}(b, c)$
-    ✓ 6$(a)_n$
-    ✓ 7$\sinh x$
-    ✓ 8$(a;b)_c$
-
-  Run test for parsing output for semantic LaTeX commands:
-    ✓ 1$\sinh(x)$
-    ✓ 2$P_a^{(b, c)}(d)$
-    ✓ 3$L_a(b)$
-    ✓ 4$L_a^{(b)}(c)$
-    ✓ 5${\rm sn}(b, c)$
-    ✓ 6$(a)_n$
-    ✓ 7$\sinh x$
-    ✓ 8$(a;b)_c$
-
-
-  343 passing (675ms)
-  313 pending
-  1 failing
-
-  1) Comprehensive test cases Literals (3) output should be correct:
-     SyntaxError: Illegal TeX function
-      at peg$c137 (lib/parser.js:184:40)
-      at peg$parselit (lib/parser.js:3537:104)
-      at peg$parselit_dq (lib/parser.js:1719:12)
-      at peg$parselit_fq (lib/parser.js:1591:12)
-      at peg$parselit_aq (lib/parser.js:1556:12)
-      at peg$parsene_expr (lib/parser.js:1247:12)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsene_expr (lib/parser.js:1249:14)
-      at peg$parseexpr (lib/parser.js:1218:12)
-      at peg$parsetex_expr (lib/parser.js:1125:12)
-      at peg$parsestart (lib/parser.js:667:14)
-      at Object.peg$parse [as parse] (lib/parser.js:12482:18)
-      at Object.module.exports.check (lib/index.js:40:28)
-      at Context.<anonymous> (test/all.js:457:42)
-
-
-
