@@ -21,8 +21,7 @@
         "url": "https://github.com/cscott/texvcjs/issues"
     },
     "dependencies": {
-        "commander": "~2.9.0",
-        "csv-parse": "~1.1.7"
+        "commander": "~2.9.0"
     },
     "devDependencies": {
         "jshint": "~2.9.1",
