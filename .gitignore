@@ -50,3 +50,6 @@ crashlytics-build.properties
 
 # Semantic Macros
 lib/optionalFunctions.csv
+
+# Node log
+lib/npm-debug.log
