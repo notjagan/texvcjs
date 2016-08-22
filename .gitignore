@@ -51,9 +51,6 @@ crashlytics-build.properties
 # Semantic Macros
 lib/optionalFunctions.csv
 
-# Compiled pegJS code
-lib/parser.js
-
 # Node log
 lib/npm-debug.log
 
