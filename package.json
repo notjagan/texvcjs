@@ -26,7 +26,7 @@
     "devDependencies": {
         "jshint": "~2.9.1",
         "mocha": "~3.0.2",
-        "pegjs": "~0.9.0",
+        "pegjs": "~0.10.0",
         "balanced-match": "~0.4.2"
     },
     "bin": {
